@@ -9,10 +9,11 @@
             font-family: 'Segoe UI', Arial, sans-serif;
             margin: 0;
             padding: 0;
-            /* خلفية اللعبة */
-            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://wallpaperaccess.com/full/1523291.jpg');
+            /* تم وضع صورتك كخلفية للموقع بالكامل هنا */
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://iili.io/BEmzI14.png');
             background-size: cover;
             background-attachment: fixed;
+            background-position: center;
             color: white;
             display: flex;
             flex-direction: column;
@@ -28,14 +29,15 @@
         header h1 { 
             font-size: 3.5rem; 
             margin: 0; 
-            text-shadow: 4px 4px 15px rgba(0,0,0,0.7);
+            text-shadow: 4px 4px 15px rgba(0,0,0,0.8);
             letter-spacing: 2px;
         }
 
         header p { 
             font-size: 1.2rem; 
-            opacity: 0.8; 
+            opacity: 0.9; 
             margin-top: 10px;
+            text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
         }
 
         .container {
@@ -47,12 +49,12 @@
             padding-bottom: 50px;
         }
 
-        /* كارت الباكس بنمط Bloxdman */
+        /* كارت الباكس */
         .card {
-            background: rgba(255, 255, 255, 0.08);
-            backdrop-filter: blur(12px);
-            -webkit-backdrop-filter: blur(12px);
-            border: 1px solid rgba(255, 255, 255, 0.15);
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
             border-radius: 15px;
             display: flex;
             align-items: center;
@@ -62,12 +64,10 @@
 
         .card:hover {
             transform: scale(1.02);
-            background: rgba(255, 255, 255, 0.12);
+            background: rgba(255, 255, 255, 0.15);
             border-color: #00d4ff;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
         }
 
-        /* صورة الباكس (صورتك الجديدة) */
         .pack-img {
             width: 90px;
             height: 90px;
@@ -86,7 +86,6 @@
             margin: 0; 
             font-size: 1.4rem; 
             color: #fff;
-            text-shadow: 1px 1px 5px rgba(0,0,0,0.5);
         }
 
         .download-btn {
@@ -97,20 +96,13 @@
             border-radius: 10px;
             font-size: 1rem;
             font-weight: bold;
-            transition: 0.2s;
             box-shadow: 0 4px 15px rgba(0,212,255,0.3);
-        }
-
-        .download-btn:hover {
-            filter: brightness(1.1);
-            box-shadow: 0 6px 20px rgba(0,212,255,0.5);
         }
 
         /* للهواتف */
         @media (max-width: 600px) {
             .card { flex-direction: column; text-align: center; }
             .pack-img { margin-right: 0; margin-bottom: 15px; }
-            .pack-info { margin-bottom: 15px; }
             header h1 { font-size: 2.5rem; }
         }
     </style>
@@ -125,14 +117,3 @@
 <div class="container">
     
     <div class="card">
-        <img src="https://iili.io/BEmzI14.png" class="pack-img" alt="400 Subs Tpack">
-        <div class="pack-info">
-            <h3>400 Subs Tpack</h3>
-        </div>
-        <a href="https://www.mediafire.com/file/d5pvbz8k0iujvam/400+Sub+T+pack+(KyrosX).zip/file" target="_blank" class="download-btn">Download</a>
-    </div>
-
-</div>
-
-</body>
-</html>
